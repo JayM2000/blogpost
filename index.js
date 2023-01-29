@@ -36,6 +36,10 @@ app.use('/assets',express.static(path.join(__dirname, 'public/assets')));
 // routes files
 app.use('/rout',rout);
 
+app.get("/",(req,res)=>{
+    res.json("server started...")
+  })
+
 // file storage
 const stor = multer.diskStorage({
     destination: function (req,file,cb) {
