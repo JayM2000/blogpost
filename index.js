@@ -38,7 +38,7 @@ app.use('/rout',rout);
 
 app.get("/",(req,res)=>{
     res.json("server started...")
-  })
+})
 
 // file storage
 const stor = multer.diskStorage({
